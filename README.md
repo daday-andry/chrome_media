@@ -10,10 +10,10 @@
   ### Windows :
     Placer dans le répertoire d’utilisateur et créer un Dossier nommé `Chrome Ext`
 
-  #### Telecharger l’archive et deplacer le dans le repertoire `Chrome Ext`
+  #### Telecharger l’archive et decompresser le dans le repertoire `Chrome Ext`
 
   ### Ouvrez google chrome.
     * Allez dans cette url  `chrome://extensions/`
     * Si vous avez un + devant "Mode développeur", cliquez dessus.
     * Choisissez "charger l'extension non empaquetée"(ou `load unpacked extension`).
-    * Choisissez le répertoire Chrome Média qui se trouve dans le répertoire `Chrome Ext` que nous avons créé précédemment 
+    * Choisissez le répertoire `chrome_media-master` qui se trouve dans le répertoire `Chrome Ext` que nous avons créé précédemment 
