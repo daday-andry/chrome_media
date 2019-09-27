@@ -12,7 +12,7 @@
 
   #### Telecharger l’archive et deplacer le dans le repertoire `Chrome Ext`
 
-    Ouvrez google chrome.
+  ### Ouvrez google chrome.
     * Allez dans cette url  `chrome://extensions/`
     * Si vous avez un + devant "Mode développeur", cliquez dessus.
     * Choisissez "charger l'extension non empaquetée"(ou `load unpacked extension`).
