@@ -18,7 +18,7 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 
 #### Ensuite dans Google chrome :
 
-* Naviger vers  <a href ="chrome://extensions/"> Chrome extension manager </a>`
+* Naviger vers  `chrome://extensions/`
 * Si vous avez un + devant "Mode développeur", cliquez dessus.
 * Choisissez "charger l'extension non empaquetée"(ou `load unpacked extension`).
 * Choisissez le répertoire `chrome_media-master` qui se trouve dans le répertoire `Chrome Ext` que nous avons créé précédemment 
@@ -26,4 +26,4 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 
 ## Authors
 
-*** DADAY Andry ** - *Developpeur informatique* - <a href='https://andry-nirina.portfoliobox.net'> Pour plus d'information </a>
+*** DADAY Andry ** - *Developpeur informatique* - <a href='https://andrynirina.portfoliobox.net'> Pour plus d'information </a>
