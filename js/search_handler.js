@@ -7,6 +7,7 @@ $(document).ready(function() {
         return false;
     });
     refreshPlayList();
+    $('body, html').animate({ scrollTop: $("tr:last").offset().top }, 1000);
 });
 function youtubeApiCall() {
     $.ajax({
@@ -58,7 +59,7 @@ function refreshPlayList(){
     });
     //
     $("#play-list-tbl").html(video_list_tab);
-    
+
     $("#play-list-tbl .video_item").on('click',function(){
         $video_index=$(this).attr("video_index");
         chrome.extension.getBackgroundPage().player.playVideoAt($video_index);
