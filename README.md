@@ -12,10 +12,8 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 
 ### Installation
 
-#### Télecharger l'extension ici
-    ```
-    lien vers la 
-    ```
+#### Télecharger l'extension <a href="https://github.com/daday-andry/chrome_media">ici</a>
+
 #### Décompresser l'archive et placer dans un repertoire comme 'Chrome Ext' (Vous pouvez nommé la repertoire comme bon vous semble )
 
 #### Ensuite dans Google chrome :
