@@ -12,11 +12,11 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 
 ### Installation
 
-#### Pour télecharger l'extension, clic <a href="https://github.com/daday-andry/chrome_media/archive/master.zip">ici</a>
+##### Pour télecharger l'extension, clic <a href="https://github.com/daday-andry/chrome_media/archive/master.zip">ici</a>
 
-#### Décompresser l'archive et placer dans un repertoire comme 'Chrome Ext' (Vous pouvez nommé la repertoire comme bon vous semble )
+##### Décompresser l'archive et placer dans un repertoire comme 'Chrome Ext' (Vous pouvez nommé la repertoire comme bon vous semble )
 
-#### Ensuite dans Google chrome :
+##### Ensuite dans Google chrome :
 
 * Naviger vers  `chrome://extensions/`
 * Si vous avez un + devant "Mode développeur", cliquez dessus.
@@ -30,6 +30,6 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 </video>
 </center>
 
-## Authors
+### Authors
 
-*** DADAY Andry ** - *Developpeur informatique* - <a href='https://andrynirina.portfoliobox.net'> Pour plus d'information </a>
+* DADAY Andry * - Developpeur informatique - <a href='https://andrynirina.portfoliobox.net'> Plus d'information. </a>
