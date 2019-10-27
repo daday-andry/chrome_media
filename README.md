@@ -24,9 +24,11 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 * Choisissez le répertoire `chrome_media-master` qui se trouve dans le répertoire `Chrome Ext` que nous avons créé précédemment 
 
 ### Prise en main
-<video width="320" height="240" controls>
+<center>
+<video width="620" height="420" controls>
   <source src="chrome_player_tuto.mp4" type="video/mp4">
 </video>
+</center>
 
 ## Authors
 
