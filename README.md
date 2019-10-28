@@ -26,7 +26,7 @@ L'extension est compatible avec toute la version du Navigateur Google Chrome
 ### Prise en main
 <center>
 <video width="620" height="420" controls>
-  <source src="chrome_player_tuto.mp4" type="video/mp4">
+  <source src="web-res/chrome_player_tuto.mp4" type="video/mp4">
 </video>
 </center>
 
