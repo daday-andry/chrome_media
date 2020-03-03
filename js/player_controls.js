@@ -29,8 +29,18 @@ function OnStateChange(event){
 $('.control_btn').on('click', function(){
   $action=$(this).attr("action");
   switch($action){
-    case 'play'  :  chrome.extension.getBackgroundPage().player.playVideo();     break;
-    case 'pause' :  chrome.extension.getBackgroundPage().player.pauseVideo();    break;
+    case 'play'  :  
+      chrome.extension.getBackgroundPage().player.playVideo();     
+      $(this).attr("action","pause");
+      $(this).removeClass("play_btn");
+      $(this).addClass("pause_btn");
+      break;
+    case 'pause' :  
+      chrome.extension.getBackgroundPage().player.pauseVideo();    
+      $(this).attr("action","play");
+      $(this).removeClass("pause_btn");
+      $(this).addClass("play_btn");
+      break;
     case 'stop'  :  chrome.extension.getBackgroundPage().player.stopVideo();     break;
     case 'next'  :  chrome.extension.getBackgroundPage().player.nextVideo();     break;
     case 'prev'  :  chrome.extension.getBackgroundPage().player.previousVideo(); break;

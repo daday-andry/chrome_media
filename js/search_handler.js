@@ -68,7 +68,6 @@ function refreshPlayList(){
         $video_index=$(this).parents("tr").children(".video_item").attr("video_index");
         chrome.extension.getBackgroundPage().play_list_string.splice($video_index,1)
         chrome.extension.getBackgroundPage().playlist.splice($video_index,1);
-        
         refreshPlayList();
     })
 }
