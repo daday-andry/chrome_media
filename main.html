@@ -2,35 +2,58 @@
        <head>
            <link rel="stylesheet" href="css/bootstrap.css">
            <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-           <link rel="stylesheet" href="css/style.css">
+           <link rel="stylesheet" href="css/main.css">
+           <link rel="stylesheet" href="css/home.css">
        </head>
         <body>
-            <section>
-                <div class="header">
-                    <div class="text-center">
+            <section id="app" class="home">
+                <div class="content-wrapper">
+                    <div class="header-title">
+                        <h4>For you</h4>
+                    </div>
+                    <div class="miniature">
                         <img src="img/play_icon.gif" class="full-width">
                     </div>
-                    <div class="curent_play_div">
-                            <marquee class="curent_play_label"></marquee>
-                    </div>             
-                </div>
-                <div class="content">
+                    <div class="curent_play_div text-center">
+                       <label class="curent_play_label"></label>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <span>00:00</span><span class=""> / 03:10</span>
+                        </div>
+                    </div>
                     <div class="controls">
-                        <button class="control_btn pause_btn" action="pause"></button>
                         <button class="control_btn prev_btn" action="prev"></button>
+                        <button class="control_btn pause_btn" action="pause"></button>
                         <button class="control_btn next_btn" action="next"></button>
-                        <a href="play_list.html">
-                        <button class="control_btn list_btn" action="Play list">
-                        </button></a>
+                    </div>  
+                </div>
+                <div class="footer-wrapper">
+                    <div class="nav">
+                        <div class="item active">
+                            <a href="#"><i class="fa fa-2x fa-home"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="play_list.html"><i class="fa fa-2x fa-list-ul"></i></a>
+                        </div>
+                        <div class="item">
+                          <a href="search.html"><i class="fa fa-2x fa-search"></i></a>
+                        </div>
+                        <div class="item">
+                            <a href="about.html"><i class="fa fa-2x fa-info-circle"></i></a>
+                        </div>
                     </div>
                 </div>
+                <!--
                 <div class="footer">
                     <label>By <a href="http://andrynirina.portfoliobox.net" target="_blank"> daday-andry </a> </label>
                 </div>
+            -->
             </section>
             <script src="js/jquery.js"></script>
-            <script src="js/player_controls.js"></script>
-            <script src="js/search_handler.js"></script>
             <script src="js/main.js"></script>
+            <script src="js/home.js"></script>
+            <script src="js/player_controls.js"></script>
+            
         </body>
     </html>

@@ -2,7 +2,6 @@ var player;
 var previousIndex = 0;
 var playlist = ['vanQlfZDH24'];
 var play_list_string =['Rija rasoloandraibe'];
-var curent_play;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
@@ -42,8 +41,8 @@ $('.control_btn').on('click', function(){
       $(this).addClass("play_btn");
       break;
     case 'stop'  :  chrome.extension.getBackgroundPage().player.stopVideo();     break;
-    case 'next'  :  chrome.extension.getBackgroundPage().player.nextVideo();     break;
-    case 'prev'  :  chrome.extension.getBackgroundPage().player.previousVideo(); break;
+    case 'next'  :  refreshPlayLabel(); chrome.extension.getBackgroundPage().player.nextVideo();     break;
+    case 'prev'  :  refreshPlayLabel(); chrome.extension.getBackgroundPage().player.previousVideo(); break;
   } 
 });
 
