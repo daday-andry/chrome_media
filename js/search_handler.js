@@ -1,1 +1,46 @@
-function youtubeApiCall(){$.ajax({cache:!1,data:$.extend({key:"AIzaSyCStgr_nqtltXMrMfsBBLm2MVQpk38O6Vk",q:$("#hyv-search").val(),part:"snippet"},{maxResults:20,pageToken:$("#pageToken").val()}),dataType:"json",type:"GET",timeout:5e3,url:"https://www.googleapis.com/youtube/v3/search"}).done(function(e){var t=e.items,i="";$.each(t,function(e,t){i+="<tr><td style='width:10%'><i class='fa fa-music' aria-hidden='true'></i></td><td class='selectable'><small  info='"+t.snippet.title+"' videoId='"+t.id.videoId+"'>"+t.snippet.title+"<br><i>&nbsp;by :"+t.snippet.channelTitle+"</i></small></td></tr>"}),$("#hyv-watch-content").show(),$("#hyv-watch-related").html(i),$(".selectable small").on("click",function(){$videoId=$(this).attr("videoId"),$videoInfo=$(this).attr("info"),chrome.extension.getBackgroundPage().playlist.push($videoId),chrome.extension.getBackgroundPage().play_list_string.push($videoInfo),refreshPlayList()})})}function refreshPlayList(){play_list_string=chrome.extension.getBackgroundPage().play_list_string;var e="";$.each(play_list_string,function(t,i){e+="<tr><td style='width:10%'><i class='fa fa-music drawable' aria-hidden='true'></i></td><td class='selectable video_item' video_index='"+t+"'>"+i+"</td><td><a><i class='fa fa-trash selectable'></a></td></tr>"}),$("#play-list-tbl").html(e),$("#play-list-tbl .video_item").on("click",function(){$video_index=$(this).attr("video_index"),chrome.extension.getBackgroundPage().player.playVideoAt($video_index)}),$("#play-list-tbl .fa-trash").on("click",function(){$video_index=$(this).parents("tr").children(".video_item").attr("video_index"),chrome.extension.getBackgroundPage().play_list_string.splice($video_index,1),chrome.extension.getBackgroundPage().playlist.splice($video_index,1),refreshPlayList()})}var play_list;$(document).ready(function(){$("#hyv-watch-content").hide(),$("#hyv-searchBtn").on("click",function(e){return youtubeApiCall(),!1}),refreshPlayList(),$("body, html").animate({scrollTop:$("tr:last").offset().top},1e3)});
+$(document).ready(function() {
+    $("#hyv-watch-content").hide();
+    $("#hyv-search").on("keydown", function(event) {
+        if($(this).val().length > 2){
+            youtubeApiCall();
+        }
+    });   
+});
+function youtubeApiCall() {
+    $.ajax({
+        cache: false,
+        data: $.extend({
+            key: 'AIzaSyCStgr_nqtltXMrMfsBBLm2MVQpk38O6Vk',
+            q: $('#hyv-search').val(),
+            part: 'snippet'
+        }, {
+            maxResults: 20,
+            pageToken: $("#pageToken").val()
+        }),
+        dataType: 'json',
+        type: 'GET',
+        timeout: 5000,
+        url: 'https://www.googleapis.com/youtube/v3/search'
+    }).done(function(data) {
+        var items = data.items,
+        videoList = "";
+        $.each(items, function(index, e) {
+            videoList +=
+            "<li class='list-group-item'>"+
+                "<p class='title'>"+e.snippet.title+"</p>"+
+                "<p class='author'>" +e.snippet.channelTitle+"</p>"+
+                "<span class='fa fa-plus add2play' info='"+e.snippet.title+"' videoId='"+e.id.videoId+"'></span>"
+            "</li>";
+        });
+        $("#hyv-watch-content").show();
+        $("#hyv-watch-related").html(videoList);
+        //play list controller
+        $('.add2play').on('click', function(){
+            $videoId=$(this).attr("videoId");
+            $videoInfo=$(this).attr("info");
+            chrome.extension.getBackgroundPage().playlist.push($videoId);
+            chrome.extension.getBackgroundPage().play_list_string.push($videoInfo);
+            showInfo($videoInfo+" added to play list");
+        });
+    });
+}

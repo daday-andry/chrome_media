@@ -1,0 +1,105 @@
+body{
+    background-image: url("/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+#app{
+    width:237px;
+    height: 465px;
+    padding:35px 25px 15px 25px;
+}
+.content-wrapper .list-group{
+    height: 300px;
+    overflow-x: hidden;
+}
+.content-wrapper .list-group-item {
+    padding: 0px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+}
+.header-title h4{
+    margin-top:25px;
+    font-weight: 800;
+}
+.infos_modal .modal-content {
+    max-width: 170px !important;
+    background: #dff0d8f2 !important;
+    padding: 5px !important;
+    text-align: center !important;
+    top: 40% !important;
+    left : 30px;
+    font-size: 12px;
+}
+.infos_modal .fa.fa-info {
+    float: right;
+    border: solid 1px;
+    border-radius: 100%;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    color: #07ca0b;
+}
+.modal-backdrop.in {
+    display: none !important;
+}
+
+.list .list-group-item p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 145px;
+  }
+.list .list-group-item p.title {
+    margin: 2px 0px 0px 0px !important;
+    font-weight: 600 !important;
+    font-family: cursive !important;
+}
+
+.list .list-group-item p.author {
+    font-style: italic;
+    font-weight: 400 !important;
+    margin-left: 5px !important;
+    margin: -2px 0 5px 0px;
+}
+.footer-wrapper{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 9;
+    bottom: 30px;
+    left: 2px;
+}
+.footer-wrapper .item {
+    display: inline-block;
+    margin: 10px;
+}
+.footer-wrapper .item .fa {
+    color: a3a3a3;
+}
+
+.footer-wrapper .item.active .fa {
+    color: C2E2E6;
+}
+
+.inline-block{
+    display: inline-block;
+}
+.text-center{
+    text-align: center;
+}
+.selectable{
+    cursor: pointer;
+}
+.drawable{
+    cursor: grab;
+}
+
+.fa .fa-trash{
+    display: none;
+}
+.full-width{
+width: 100%;
+}

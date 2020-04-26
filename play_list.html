@@ -1,1 +1,57 @@
-<html><head><link rel="stylesheet" href="css/bootstrap.css"><link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="css/style.css"></head><body><section><div class="header"><div class="play-list scrollable"><table class="table"><tbody id="play-list-tbl"></tbody></table></div><div></div></div><div class="content"><div class="inline-block"><a href="main.html" class="inline-block"><button class="control_btn retour_btn"></button></a><form action="" method="post" name="hyv-yt-search" id="hyv-yt-search" class="inline-block"><input type="search" name="hyv-search" id="hyv-search" placeholder="Youtube search..." class="form-control"> <button id="hyv-searchBtn"></button></form></div><div id="hyv-watch-content" class="hyv-watch-main-col hyv-card hyv-card-has-padding scrollable"><table class="table table-hover"><tbody id="hyv-watch-related"></tbody></table></div></div><div class="footer"><label>By <a href="http://andrynirina.portfoliobox.net" target="_blank">daday-andry</a></label></div></section><script src="js/jquery.js"></script><script src="js/player_controls.js"></script><script src="js/search_handler.js"></script></body></html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/play_list.css">
+
+    </head>
+     <body>
+         <section id="app">
+            <div class="content-wrapper">
+                <div class="header-title">
+                    <h4>Play list</h4>
+                </div>
+                <div class="play-list">
+                    <ul class="list list-group list-group-flush" id="play_list">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="delete_space" id="delete_space">
+                <span class=" fa fa-2x fa-trash"></span>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="nav">
+                    <div class="item">
+                        <a href="main.html"><i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                    <div class="item active">
+                        <a href="#"><i class="fa fa-2x fa-list-ul"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="search.html"><i class="fa fa-2x fa-search"></i></a>
+                    </div>
+                    <div class="item">
+                        <a href="about.html"><i class="fa fa-2x fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <div class="modal infos_modal" id="infos">
+                <div class="modal-content">
+                    <i class="fa fa-info"></i>
+                    <p class="message">
+                        ceci est un message d'alert pour le aapplication ternierrer
+                    </p>
+                    
+                </div>
+            </div>
+         <script src="js/jquery.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/main.js"></script>
+         <script src="js/sortable.js"></script>
+         <script src="js/playlist.js"></script>
+     </body>
+ </html>
