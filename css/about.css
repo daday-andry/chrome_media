@@ -1,10 +1,1 @@
-.text-justify p{
-    font-family: serif;
-    padding: 5px 10px 0px 7px;
-    border-top: solid 1px #7e7e7e38;
-}
-.text-justify p a:focus, .text-justify p  a:hover  {
-    text-decoration: none !important;
-    outline: none !important;
-    color: #fe950a !important;
-}
+.text-justify p{font-family:serif;padding:5px 10px 0 7px;border-top:solid 1px #7e7e7e38}.text-justify p a:focus,.text-justify p a:hover{text-decoration:none!important;outline:0!important;color:#fe950a!important}
