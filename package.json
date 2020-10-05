@@ -1,0 +1,14 @@
+{
+  "name": "chrome_media",
+  "version": "1.0.0",
+  "description": "Media player",
+  "main": "index.js",
+  "repository": "https://github.com/daday-andry/chrome_media",
+  "author": "ANDRY Nirina <ani@esokia.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "font-awesome": "^4.7.0"
+  }
+}

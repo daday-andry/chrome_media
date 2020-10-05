@@ -1,0 +1,68 @@
+.home .miniature{
+    background: white;
+    border-radius:10px; 
+    margin: 15px 0px 00px 0px;
+    padding: 5px;
+    -webkit-box-shadow: inset 0px 0px 27px 5px rgba(237,237,237,1);
+    -moz-box-shadow: inset 0px 0px 27px 5px rgba(237,237,237,1);
+    box-shadow: inset 0px 0px 27px 5px rgba(237,237,237,1);
+    position: relative;
+}
+.home .miniature img{
+    width: 100%;
+    border-radius: 10px;
+   }
+   .time {
+    position: absolute;
+    z-index: 9999;
+    right: 15px;
+    bottom: 10px;
+    color: white;
+    font-size: 10px;
+}
+   .curent_play_div{
+    padding: 5px 15px 0px 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    max-height: 75px;
+}
+.curent_play_label{
+    font-size: 10px;
+}
+
+
+
+.controls{
+    
+    text-align: center;
+    margin:auto;
+}
+.controls button{
+    background-image: url("/assets/img/icons.png");
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.controls button:focus{
+    outline: none
+}
+.play_btn{
+    background-position: 0px -6px;
+}
+.pause_btn{
+    background-position: -52px -6px;
+}
+.next_btn{
+    background-position: -207px 88px;
+}
+.prev_btn{
+    background-position: -104px 182px;
+}
+.list_btn{
+    margin-left:15px;
+    background-position: -259px 88px;
+}
+

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/css/_app.css">
+        <link rel="stylesheet" href="/assets/css/play_list.css">
+
+    </head>
+     <body>
+         <section id="app">
+            <div class="content-wrapper">
+                <div class="header-title">
+                    <h4>Play list</h4>
+                    <i class="page_tips fa fa-2x fa-info-circle" data-toggle="modal" data-target="#tips"></i>
+                </div>
+                <div class="play-list">
+                    <ul class="list list-group list-group-flush" id="play_list">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="delete_space" id="delete_space">
+                <span class=" fa fa-2x fa-trash"></span>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="nav">
+                    <div class="item"  data-toggle="tooltip" data-placement="top" title="Home">
+                        <a href="main.html"><i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                    <div class="item active" data-toggle="tooltip" data-placement="top" title="Play list">
+                        <a href="#"><i class="fa fa-2x fa-list-ul"></i></a>
+                    </div>
+                    <div class="item" data-toggle="tooltip" data-placement="top" title="Search">
+                        <a href="search.html"><i class="fa fa-2x fa-search"></i></a>
+                    </div>
+                    <div class="item" data-toggle="tooltip" data-placement="top" title="about">
+                        <a href="about.html"><i class="fa fa-2x fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <div class="modal infos_modal" id="infos">
+            <div class="modal-content">
+                <i class="fa fa-info"></i>
+                <p class="message">
+                    ceci est un message d'alert pour le aapplication ternierrer
+                </p>
+            </div>
+        </div>
+        <div class="modal infos_modal" id="tips">
+            <div class="modal-content">
+                <i class="fa fa-close" data-dismiss="modal"></i>
+                <div class="tips_info text-justify">
+                    <p><b>Play list tips</b></p>
+                    <p> <b>1. </b> Drag element to sort list </p> 
+                    <p> <b>2. </b> Click on to play imediatly </p>
+                    <p> <b>3. </b> Drag to trash icon in bootom left to remove an element from playlist </p>
+                </div>
+            </div>
+        </div>
+         <script src="/assets/js/jquery.js"></script>
+         <script src="/assets/js/sortable.js"></script>
+         <script src="/assets/js/bootstrap.min.js"></script>
+         <script src="/assets/js/main.js"></script>
+         <script src="/assets/js/playlist.js"></script>
+     </body>
+ </html>

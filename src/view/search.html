@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/assets/css/_app.css">
+        <link rel="stylesheet" href="/assets/css/search.css">
+    </head>
+     <body>
+         <section id="app">
+            <div class="content-wrapper">
+                <div class="header-title">
+                    <h4>Search</h4>
+                    <i class="page_tips fa fa-2x fa-info-circle" data-toggle="modal" data-target="#tips"></i>
+                    <form action="" method="post" name="hyv-yt-search" id="hyv-yt-search" class="inline-block"> 
+                        <input type="search" name="hyv-search" id="hyv-search" placeholder="Youtube search..." autocomplete="off"> 
+                    </form>
+                </div>
+                <div id="hyv-watch-content" class="hyv-watch-main-col hyv-card hyv-card-has-padding play-list">
+                    <ul id="hyv-watch-related" class="list-group list-group-flush list">
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-wrapper">
+                <div class="nav">
+                    <div class="item" data-toggle="tooltip" data-placement="top" title="Home">
+                        <a href="main.html"><i class="fa fa-2x fa-home"></i></a>
+                    </div>
+                    <div class="item" data-toggle="tooltip" data-placement="top" title="Play list">
+                        <a href="play_list.html"><i class="fa fa-2x fa-list-ul"></i></a>
+                    </div>
+                    <div class="item active" data-toggle="tooltip" data-placement="top" title="Search">
+                        <a href="#"><i class="fa fa-2x fa-search"></i></a>
+                    </div>
+                    <div class="item" data-toggle="tooltip" data-placement="top" title="about">
+                        <a href="about.html"><i class="fa fa-2x fa-info-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- The Modal -->
+        <div class="modal infos_modal" id="infos">
+            <div class="modal-content">
+                <i class="fa fa-info"></i>
+                <p class="message">
+                    ceci est un message d'alert pour le aapplication ternierrer
+                </p>
+            </div>
+        </div>
+         <script src="/assets/js/jquery.js"></script>
+         <script src="/assets/js/bootstrap.min.js"></script>
+         <script src="/assets/js/main.js"></script>
+         <script src="/assets/js/search_handler.js"></script>
+     </body>
+ </html>

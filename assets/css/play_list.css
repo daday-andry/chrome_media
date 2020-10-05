@@ -1,0 +1,45 @@
+.play-list .list-group-item{
+  cursor: pointer;
+}
+.play-list .list-group-item:hover {
+  background: #d9edf7d4;
+}
+
+.play-list .list-group-item .drag_btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: grab;
+}
+
+.delete_space {
+    background: #ff49048c;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 100%;
+    animation: pulse 1s infinite;
+    position:absolute;
+    z-index:10;
+    bottom: 30px;
+    display:none;
+}
+.delete_space.show {
+   display:block;
+}
+
+.delete_space .fa-trash {
+    margin-top: 15px;
+    color: #ffefeffc;
+}
+@keyframes pulse {
+  0% {
+    background-color: #ff470478;
+  }
+  50% {
+    background-color: #ff4704;
+  }
+  100% {
+    background-color: #ff470478;
+  }
+}
